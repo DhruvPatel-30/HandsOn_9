@@ -1,25 +1,24 @@
 {
-    // ...
-    "overrideCommand": true,
-    "runArgs": [
-        "--cap-add=SYS_PTRACE",
-        "--security-opt",
-        "seccomp=unconfined"
-    ],
-    "postCreateCommand": "pip3 install --user ansible",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "ms-azuretools.vscode-docker",
-                "streetsidesoftware.code-spell-checker",
-                "ms-python.autopep8",
-                "dbaeumer.vscode-eslint",
-                "ritwickdey.LiveServer",
-                "ms-python.vscode-pylance",
-                "ms-python.python",
-                "ms-python.debugpy"
-            ]
-        }
+  "name": "PROG8850flyway",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "runArgs": [
+    "--cap-add=SYS_PTRACE",
+    "--security-opt",
+    "seccomp=unconfined"
+  ],
+  "postCreateCommand": "pip install --user ansible",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "streetsidesoftware.code-spell-checker",
+        "ms-python.autopep8",
+        "dbaeumer.vscode-eslint",
+        "ritwickdey.LiveServer",
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "ms-python.debugpy"
+      ]
     }
-    // ...
   }
+}
